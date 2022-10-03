@@ -1,3 +1,4 @@
+package Aula2;
 import Aula.Animal;
 
 public class App {
