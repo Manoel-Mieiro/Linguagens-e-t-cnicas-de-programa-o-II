@@ -9,6 +9,8 @@ public class App {
         p1.cpf = "17733635730";
         p1.telefone = "969785489";
         p1.dados_pessoais();
+        p1.valida();
+        System.out.println("-------------------------------------------------------------------------");
         
         Endereço e1 = new Endereço();
         p1.ad1 = e1;
@@ -18,7 +20,6 @@ public class App {
         e1.bairro = "Pilares";
         e1.cidade = "Rio de Janeiro";
         e1.cep = "20760-230";
-        System.out.println("-------------------------------------------------------------------------");
         e1.lugar();
 
         Animal a1 = new Animal();
