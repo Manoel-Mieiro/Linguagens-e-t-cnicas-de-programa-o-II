@@ -1,40 +1,25 @@
 package Prova;
 
+//Saber herda comportamentos e características de Weapon
 public class Saber extends Weapon{
 
-    public Saber() {
-    }
 
-    public Saber (String descricao, int dano)    {
-        System.out.println("Um sabre de luz " + descricao);
-        System.out.println("Dano: " + dano);
-    }
+   
 
-    public void slash() {
-        
+    public Saber(String descricao, int dano) {
+        super(descricao, dano);
     }
-
-    
 
     /*
-    public String getDescricao (){
-        return super.getDescricao();
-
+    //Argumentos herdados de Weapon
+    public Saber(String descricao, int dano) {
+        super(descricao, dano);
+    }
+    */
+    //Método
+    public void slash() {
+     System.out.println("O sabre " + super.getDescricao() + " cortou o inimigo");   
     }
 
-    public void setDescricao (){
-        super.setDescricao(getDescricao());
-    }
-        
-    
-    public int getDano (){
-        return super.getDano();
 
-    }
-
-    public void setDano (){
-        super.setDano(getDano());;
-    }
-
-  */   
 }

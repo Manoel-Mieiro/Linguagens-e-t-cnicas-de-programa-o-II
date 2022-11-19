@@ -1,9 +1,6 @@
 package Prova;
 
-/*
-import java.util.ArrayList;
-import java.util.List;
-*/
+
 public class App {
 public static void main(String[] args) {
     
@@ -23,20 +20,27 @@ public static void main(String[] args) {
     j1.mindControl();
     Sith s1 = new Sith();
     s1.telepath();
-    Jedi j2 = new Jedi("Obi-Wan", "Kenobi", null, null);
+    Jedi j2 = new Jedi("Obi-Wan", "Kenobi", null);
     j2.imprime();
     j2.mindControl(null);
     j2.mindControl();
     j2.levitation();
-    Sith s2 = new Sith("Darth", "Vader", null, null);
+    Sith s2 = new Sith("Darth", "Vader", null);
     s2.imprime();
     s2.levitation(null);
     s2.mindControl();
     s2.levitation();
+    //Weapon w1 = new Weapon("azuk", 0);
+    Saber sb1 = new Saber("azul", 0);
+    sb1.slash();
+    Saber sb2 = new Saber("vermelho", 0);
+    sb2.slash();
+    Blast b1 = new Blast("laser", 0);
+    b1.shot();
+
     
-    Saber sb1 = new Saber("azul", 45);
-    Saber sb2 = new Saber("vermelho", 90);
-    Blast b1 = new Blast("laser", 44);
+
+  
     
 
 }

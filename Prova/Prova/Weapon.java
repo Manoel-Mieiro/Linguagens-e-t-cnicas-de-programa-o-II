@@ -9,9 +9,9 @@ public class Weapon {
         this.dano = dano;
     }
     public void drop() {
+        
     }
-    /*
-    public void pickUp(String descricao) {
+    /*public void pickUp(String descricao) {
         this.descricao = descricao;
     }
     */

@@ -2,7 +2,7 @@ package Prova;
 
 public class Jedi extends Pessoa implements Force{
 private String titulo;
-private String weapons;
+//private String weapons;
 
 
 
@@ -15,6 +15,7 @@ public void setTitulo(String titulo) {
     this.titulo = titulo;
 }
 
+/*
 public String getWeapons() {
     return weapons;
 }
@@ -22,23 +23,23 @@ public String getWeapons() {
 public void setWeapons(String weapons) {
     this.weapons = weapons;
 }
-
+ */
 
 public Jedi (){
         
 }
 
-    public Jedi(String nome, String sobrenome, String titulo, String weapons) {
+    public Jedi(String nome, String sobrenome, String titulo/*, String weapons */) {
         super(nome, sobrenome);
         this.titulo = titulo;
-        this.weapons = weapons;
+        //this.weapons = weapons;
         
     }
 
 public void imprime (){
     System.out.println(super.getNome() + " " + super.getSobrenome());
     System.out.println("Titulo: " + titulo);
-    System.out.println("Weapons: " + weapons);
+    //System.out.println("Weapons: " + weapons);
 }
 
 @Override

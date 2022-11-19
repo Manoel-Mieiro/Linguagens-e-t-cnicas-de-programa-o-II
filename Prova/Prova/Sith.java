@@ -1,15 +1,15 @@
 package Prova;
 
+
 public class Sith extends Pessoa implements Force{
 private String titulo;
-private  String weapons;
 
 
 
-public Sith(String nome, String sobrenome, String titulo, String weapons) {
+public Sith(String nome, String sobrenome, String titulo/*, String weapons */) {
     super(nome, sobrenome);
     this.titulo = titulo;
-    this.weapons = weapons;
+    //this.weapons = weapons;
 }
 
 public String getTitulo() {
@@ -19,7 +19,7 @@ public String getTitulo() {
 public void setTitulo(String titulo) {
     this.titulo = titulo;
 }
-
+/*
 public String getWeapons() {
     return weapons;
 }
@@ -27,7 +27,7 @@ public String getWeapons() {
 public void setWeapons(String weapons) {
     this.weapons = weapons;
 }
-    
+*/    
 public Sith (){
 
 }
@@ -36,7 +36,7 @@ public Sith (){
 public void imprime (){
     System.out.println(super.getNome() + " " + super.getSobrenome());
     System.out.println("Titulo: " + titulo);
-    System.out.println("Weapons: " + weapons);
+    //System.out.println("Weapons: " + weapons);
 }
 
 @Override
@@ -64,7 +64,7 @@ public void levitation() {
 }
 
 public void levitation (String smt){
-    smt = "Something";
+        smt = "Something";
     System.out.println("Levitating " + smt);
 }
 
