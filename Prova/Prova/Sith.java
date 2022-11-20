@@ -1,76 +1,63 @@
 package Prova;
 
+import java.util.ArrayList;
 
-public class Sith extends Pessoa implements Force{
-private String titulo;
+public class Sith extends Pessoa implements Force {
+    private String titulo = "Sith";
+    private ArrayList weapons;
 
+    public Sith(String nome, String sobrenome, String titulo/* , String weapons */) {
+        super(nome, sobrenome);
+    }
 
+    public String getTitulo() {
+        return titulo;
+    }
 
-public Sith(String nome, String sobrenome, String titulo/*, String weapons */) {
-    super(nome, sobrenome);
-    this.titulo = titulo;
-    //this.weapons = weapons;
-}
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
 
-public String getTitulo() {
-    return titulo;
-}
+    public Sith() {
 
-public void setTitulo(String titulo) {
-    this.titulo = titulo;
-}
-/*
-public String getWeapons() {
-    return weapons;
-}
+    }
 
-public void setWeapons(String weapons) {
-    this.weapons = weapons;
-}
-*/    
-public Sith (){
+    public void imprime() {
+        System.out.println(super.getNome() + " " + super.getSobrenome());
+        System.out.println("Titulo: " + titulo);
+    }
 
-}
+    @Override
+    public void mindControl() {
+        System.out.println("[Sith]: Controle mental ativado");
 
+    }
 
-public void imprime (){
-    System.out.println(super.getNome() + " " + super.getSobrenome());
-    System.out.println("Titulo: " + titulo);
-    //System.out.println("Weapons: " + weapons);
-}
+    @Override
+    public void farseeing() {
+        System.out.println("[Sith]: Visão amplificada");
 
-@Override
-public void mindControl() {
-    System.out.println("[Sith]: Controle mental ativado");
-    
-}
+    }
 
-@Override
-public void farseeing() {
-    System.out.println("[Sith]: Visão amplificada");
-    
-}
+    @Override
+    public void telepath() {
+        System.out.println("[Sith]: Telepatia ativada");
 
-@Override
-public void telepath() {
-    System.out.println("[Sith]: Telepatia ativada");
-    
-}
+    }
 
-@Override
-public void levitation() {
-    System.out.println("[Sith]: Levitação ativada");
-    
-}
+    @Override
+    public void levitation() {
+        System.out.println("[Sith]: Levitação ativada");
 
-public void levitation (String smt){
+    }
+
+    public void levitation(String smt) {
         smt = "Something";
-    System.out.println("Levitating " + smt);
-}
+        System.out.println("Levitating " + smt);
+    }
 
+    public void lightning() {
 
-public void lightning() {
-    
-}
+    }
 
 }
